@@ -1,0 +1,44 @@
+﻿<Window x:Class="CallTracking.CoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Учет телефонных звонков" 
+        Height="512"
+        Width="1048"
+        HorizontalAlignment="Center">
+
+    <Grid x:Name="MainGrid"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top">
+          
+            <Label x:Name="LabelForName" 
+               Content="Label" 
+               HorizontalAlignment="Stretch" 
+               VerticalAlignment="Top" 
+               Background="LemonChiffon" 
+               Height="24" />
+
+        <Button x:Name="AddBankButton" 
+                Content="Добавить банк" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Top" 
+                Width="108" 
+                Click="AddBankButton_OnClick" 
+                BorderBrush="LemonChiffon" 
+                Height="24" 
+                Background="LemonChiffon"
+                Margin="0, 0, 108, 0"/>
+
+        <Button x:Name="DeleteBankButton" 
+                Content="Удалить банк" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Top" 
+                Width="108" 
+                BorderBrush="LemonChiffon" 
+                Height="24" 
+                Background="LemonChiffon" 
+                Click="DeleteBankButton_Click"
+                IsEnabled="False"
+                Visibility="Hidden"/>
+    </Grid>
+</Window>
+ 
